@@ -3,8 +3,8 @@ html {
 }
 @font-face {
   font-family: 'Test National 2';
-  src: url('Fonts/National2-Bold.ttf') format('ttf'),
-    url('Fonts/National2-Extrabold.ttf');
+  src: url('National2-Bold.ttf') format('ttf'),
+    url('National2-Extrabold.ttf');
 }
 
 * {
