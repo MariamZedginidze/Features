@@ -6,7 +6,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+button {
+  cursor: pointer;
+}
 /* nav */
 
 nav {
@@ -25,10 +27,11 @@ nav {
   margin: 0.28em 0 0 0.49em;
   padding: 0;
   font-size: 32px;
-  font-weight: 800;
   line-height: 35px;
   letter-spacing: 0em;
   color: white;
+  font-family: 'National2-Extrabold';
+  font-weight: 800;
 }
 
 .cancel-btn {
@@ -111,6 +114,7 @@ nav {
   font-weight: 800;
   line-height: 60.48px;
   letter-spacing: 0em;
+  font-family: 'National2-Extrabold';
 }
 
 .right-sidebar-paragraph {
@@ -229,13 +233,26 @@ body {
     .right-sidebar {
       flex-basis: 57%;
     }
+    #left-sidebar-illustration-one {
+      margin-left: 1.5em;
+    }
+    .left-sidebar {
+      flex-basis: 43%;
+    }
     .right-sidebar-article {
       padding-left: 2em;
+    }
+    .scroll-container {
+      bottom: 4.5em;
+      left: 2em !important;
     }
   }
   @media screen and (orientation: portrait) {
     features {
       flex-direction: column;
+    }
+    .scroll-container {
+      display: none;
     }
   }
 }
@@ -248,6 +265,23 @@ body {
   }
   @media screen and (orientation: landscape) {
   } */
+  .nav-heading {
+    color: #000000;
+  }
+  #left-sidebar-illustration-one {
+    margin-top: -1em;
+    height: 432px;
+    width: 529.2000122070312px;
+  }
+  #left-sidebar-illustration-two {
+    margin-top: 20.375em;
+    height: 714.2675355594566px;
+    width: 342.23480224609403px;
+  }
+  #left-sidebar-illustration-three {
+    margin-top: 20.375em;
+    height: 721.0000180683544px;
+  }
   .features {
     display: flex;
     flex-direction: column-reverse;
@@ -319,7 +353,21 @@ body {
   .left-sidebar {
     min-height: 33em;
   }
-
+  #left-sidebar-illustration-one {
+    height: 274.125px;
+    width: 330.203125px;
+    margin-left: 15px;
+  }
+  #left-sidebar-illustration-two {
+    margin-top: 15em;
+    height: 435.0090988322415px;
+    width: 208.4306640625002px;
+  }
+  #left-sidebar-illustration-three {
+    margin-top: 15em;
+    height: 435.0090988322415px;
+    width: 321px;
+  }
   .right-sidebar {
     max-height: 347px;
   }
@@ -343,20 +391,5 @@ body {
   /* Illustration */
   .left-sidebar-illustration {
     margin: 0;
-  }
-  #left-sidebar-illustration-one {
-    max-height: 16em;
-    max-width: 24em;
-    margin: 0em;
-  }
-  #left-sidebar-illustration-two {
-    max-height: 27.1875em;
-    max-width: 13.0625em;
-    margin-top: 15.2em;
-  }
-  #left-sidebar-illustration-three {
-    max-height: 27.1875em;
-    max-width: 13.0625em;
-    margin-top: 15.2em;
   }
 }
