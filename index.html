@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./Features.css" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./Features.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,11 +18,13 @@
     <section class="features">
       <section id="sidebar-wrapper-one" class="sidebars-wrapper">
         <nav>
-          <img class="logo" src="./black-logo.svg" />
+          <a class="button-link" href="./Landing.html">
+            <img class="logo" src="./Assets/black-logo.svg" />
+          </a>
           <h1 class="nav-heading">Features</h1>
           <a class="button-link" href="./Landing.html">
             <button type="button" class="cancel-btn">
-              <img class="cancel-icon" src="./cancel.svg" />
+              <img class="cancel-icon" src="./Assets/cancel.svg" />
             </button>
           </a>
         </nav>
@@ -30,7 +33,7 @@
             <img
               class="illustration"
               id="left-sidebar-illustration-one"
-              src="./left-sidebar-illustrated-btns.svg"
+              src="./Assets/left-sidebar-illustrated-btns.svg"
               alt="event-buttons"
             />
           </section>
@@ -44,15 +47,15 @@
               allowing them to connect with other users in their area who share
               similar interests.
             </p>
-            <h3 class="right-sidebar-heading overlaping-heading">
-              Live event tracking
-            </h3>
             <section class="scroll-container">
               <p class="scroll-text">Scroll down</p>
               <button class="arrow-btn">
                 <img class="scroll-svg" src="./Assets/arrow.svg" />
               </button>
             </section>
+            <h3 class="right-sidebar-heading overlaping-heading">
+              Live event tracking
+            </h3>
           </article>
         </section>
       </section>
@@ -63,7 +66,7 @@
             <img
               class="illustration"
               id="left-sidebar-illustration-two"
-              src="./explore-florida.svg"
+              src="./Assets/explore-florida.svg"
               alt="event-buttons"
             />
           </section>
@@ -97,7 +100,7 @@
             <img
               class="illustration"
               id="left-sidebar-illustration-three"
-              src="./avatar-mobile.svg"
+              src="./Assets/avatar-mobile.svg"
               alt="event-buttons"
             />
           </section>
@@ -105,7 +108,9 @@
 
         <section class="right-sidebar" id="right-sidebar-three">
           <article class="right-sidebar-article">
-            <h3 class="right-sidebar-heading">Customizable avatars</h3>
+            <h3 id="right-sidebar-heading-three" class="right-sidebar-heading">
+              Customizable avatars
+            </h3>
             <p class="right-sidebar-paragraph">
               Avatar on the Map, users could have more customization options for
               their avatars, such as adding accessories, clothing, and other
@@ -115,11 +120,11 @@
             </p>
           </article>
         </section>
-        <section class="indicators">
-          <section class="indicator"></section>
-          <section class="indicator"></section>
-          <section class="indicator"></section>
-        </section>
+      </section>
+      <section class="indicators">
+        <section class="indicator"></section>
+        <section class="indicator"></section>
+        <section class="indicator"></section>
       </section>
     </section>
 
