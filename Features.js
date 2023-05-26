@@ -34,10 +34,11 @@ var pinner = gsap.timeline({
     // markers: true,
   },
 });
+/*animation for Desktop Screen Size*/
 
 const screenSize = document.documentElement.clientWidth || window.innerWidth;
 /* animation for Desktop Screen Size */
-if (screenSize > 768) {
+if (screenSize > 843) {
   sidebars.forEach(function (elem, i) {
     gsap.set(elem, { position: 'absolute', top: 0, right: 0, left: 0 });
 
@@ -67,7 +68,7 @@ if (screenSize > 768) {
 }
 /*animation for Tablet Screen Size*/
 
-if (screenSize <= 768) {
+if (screenSize <= 843) {
   sidebars.forEach(function (elem, i) {
     gsap.set(elem, { position: 'absolute', top: 0, right: 0, left: 0 });
 
@@ -79,6 +80,7 @@ if (screenSize <= 768) {
       { autoAlpha: 0.0000000001 },
       i
     );
+
     tl.to(indicators[i], { backgroundColor: '#FFFFFF', duration: 0.25 }, i);
 
     if (i != sidebars.length - 1) {
@@ -90,3 +92,12 @@ if (screenSize <= 768) {
     }
   });
 }
+
+//btn onclick
+
+const button = document.querySelector('.arrow-btn');
+
+button.addEventListener('click', (event) => {
+  // button.textContent = `Click count: ${event.detail}`;
+  console.log('cute');
+});
